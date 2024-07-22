@@ -123,3 +123,85 @@ npm run dev
 }
 
 ```
+
+### 5. Add Role to User
+
+- Endpoint: POST /userRoles
+- Request Body:
+
+```bash
+{
+  "email": "tester1@gmail.com",
+  "roles": ["Test Role"]
+}
+
+
+```
+
+- Response Body:
+  
+```bash
+{
+    "id": "669e969be9fc7877eba62859",
+    "email": "tester1@gmail.com",
+    "roles": [
+        "Test Role"
+    ]
+}
+
+```
+
+### 6. Get Roles of User
+
+- Endpoint: GET /userRoles/:userEmail
+
+- Response Body:
+  
+```bash
+{
+    "id": "669e969be9fc7877eba62859",
+    "email": "tester1@gmail.com",
+    "roles": [
+        "Test Role"
+    ]
+}
+
+```
+
+### 7. Update Role to User
+
+- Endpoint: PUT /userRoles/:userEmail
+- Request Body:
+
+```bash
+{
+  "roles": ["User"]
+}
+
+```
+
+- Response Body:
+  
+```bash
+{
+    "id": "669e969be9fc7877eba62859",
+    "email": "tester1@gmail.com",
+    "roles": [
+        "User"
+    ]
+}
+
+```
+
+### 8. Delete Role to User
+
+- Endpoint: DELETE /userRoles/:userEmail
+
+- Response Body:
+  
+```bash
+{
+    "User roles deleted succesfully"
+}
+
+```
